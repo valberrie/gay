@@ -1,7 +1,7 @@
 # gay
 a small program that prints a pride flag across a terminal
 
-currently it will read the first argument from stdin to determine what flag to draw, and will draw an amount of 'spaces' based on the terminal size (columns). there are 3 flags available (pride, bi, trans), and if invoked without any argument it will print the standard pride flag. for example if you want to print the trans flag, execute the program with "trans" as the first arg (without quotes).
+currently it will read the first argument from stdin to determine what flag to draw, and will draw an amount of 'spaces' based on the terminal size (columns). there are 4 flags available (pride, bi, trans, lesbian), and if invoked without any argument it will print the standard pride flag. for example if you want to print the trans flag, execute the program with "trans" as the first arg (without quotes).
 
 todo:
   - actually parse arguments correctly lol

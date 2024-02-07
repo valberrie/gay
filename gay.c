@@ -37,6 +37,14 @@ void draw_flag(int f) {
       draw_line(LBLUE);
     break;
 
+    case 3:
+      draw_line(RED);
+      draw_line(ORANGE);
+      draw_line(WHITE);
+      draw_line(PINK);
+      draw_line(DPINK);
+    break;
+
     default:
       draw_line(RED);
       draw_line(ORANGE);
@@ -49,7 +57,7 @@ void draw_flag(int f) {
 }
 
 int main(int argc, char *argv[]) {
-  const char *flags[3] = {"gay", "bi", "trans"};
+  const char *flags[4] = {"gay", "bi", "trans", "lesbian"};
 
   ioctl(STDOUT_FILENO, TIOCGWINSZ, &sz); 
   

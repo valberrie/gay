@@ -15,3 +15,5 @@
 #define LBLUE   "\033[48;5;39m"
 #define HPINK   "\033[48;5;218m"
 
+#define DPINK   "\033[48;5;89m"
+
