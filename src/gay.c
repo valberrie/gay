@@ -21,7 +21,7 @@ struct flag lesbian = { {RED, ORANGE, WHITE, PINK, DPINK} };
 struct flag nb =      { {YELLOW, WHITE, PURPLE, BLACK} };
 struct flag ace =     { {BLACK, GRAY, WHITE, PURPLE} };
 struct flag aro =     { {GREEN, LGREEN, WHITE, GRAY, BLACK} };
-struct flag pan =     { {FUCHSIA, FUCHSIA, YELLOW, YELLOW, LBLUE, LBLUE} };
+struct flag pan =     { {FUCHSIA, YELLOW, LBLUE} };
 
 void draw_line(char *cc) {
   int s = 0; 
