@@ -1,7 +1,7 @@
 # gay
 a small program that prints a pride flag across a terminal
 
-there are 8 flags available (pride, bi, trans, lesbian, nb, ace, aro, pan)
+there are 10 flags available (pride, bi, trans, lesbian, nb, ace, aro, pan, queer, mlm)
 
 currently, it will read two args from stdin, the first being the name of the flag (typed as listed previously), and the second being an integer from 1-3 which defines how many rows each color of the flag will take up. for example, if you want to print the trans flag with 2 rows per color, execute the program with the args "trans 2". running without any args is the equivalent of running with the args "pride 1".
 

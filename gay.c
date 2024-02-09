@@ -11,17 +11,19 @@ struct winsize sz;
 
 uint ml;
 
-const char *flags[] = {"pride", "bi", "trans", "lesbian", "nb", "ace", "aro", "pan"};
+const char *flags[] = {"pride", "bi", "trans", "lesbian", "nb", "ace", "aro", "pan", "queer", "mlm"};
 
 struct flag { char *fl[10]; };
 struct flag pride =   { {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE} };
 struct flag bi =      { {FUCHSIA, FUCHSIA, PURPLE, BLUE, BLUE} };
 struct flag trans =   { {LBLUE, LPINK, WHITE, LPINK, LBLUE} };
-struct flag lesbian = { {RED, ORANGE, WHITE, PINK, DPINK} };
+struct flag lesbian = { {RED, ORANGE, LORANGE, WHITE, PINK, MPINK, DPINK} };
 struct flag nb =      { {YELLOW, WHITE, PURPLE, BLACK} };
 struct flag ace =     { {BLACK, GRAY, WHITE, PURPLE} };
 struct flag aro =     { {GREEN, LGREEN, WHITE, GRAY, BLACK} };
-struct flag pan =     { {FUCHSIA, FUCHSIA, YELLOW, YELLOW, LBLUE, LBLUE} };
+struct flag pan =     { {FUCHSIA, YELLOW, LBLUE} };
+struct flag queer =   { {PURPLE, WHITE, GREEN} };
+struct flag mlm =     { {DCYAN, CYAN, LCYAN, WHITE, LBLUE, CERUL, PURBLUE} };
 
 void draw_line(char *cc) {
   int s = 0; 
@@ -60,6 +62,8 @@ int main(int argc, char *argv[]) {
           case 5:   draw_flag(ace);     break;
           case 6:   draw_flag(aro);     break;
           case 7:   draw_flag(pan);     break;
+          case 8:   draw_flag(queer);   break;
+          case 9:   draw_flag(mlm);     break;
           default:  draw_flag(pride);
         }
         return 0;
